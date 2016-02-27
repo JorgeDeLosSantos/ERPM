@@ -1,0 +1,11 @@
+clear all;clc;
+D=input('Día de nacimiento: ');
+M=input('Mes de nacimiento: ');
+A=input('Año de nacimiento: ');
+actual=now;
+nac=datenum(A,M,D);
+fprintf('\n¿Cuánto has vivido?\n');
+fprintf('Años = %g \n',(actual-nac)/365);
+fprintf('Meses = %g \n',(actual-nac)/30);
+fprintf('Días = %g \n',(actual-nac));
+fprintf('Horas = %g \n',(actual-nac)*24);
