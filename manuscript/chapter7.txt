@@ -4,6 +4,12 @@ POO
 La clase Persona
 ----------------
 
+*Defina una clase llamada Persona, cuyos atributos serán nombre y edad,
+mismos que serán pasados como argumento en el constructor de la clase.
+Además, la clase debe contener un método crecer que recibirá como
+argumento un entero positivo que indicará los años que *crecerá* el
+objeto, desde luego modificando el atributo edad.*
+
     classdef Persona < handle
         
         properties
@@ -26,6 +32,10 @@ La clase Persona
 
 Clase Math (Métodos estáticos)
 ------------------------------
+
+*Desarrolle una clase Math que contenga los atributos constantes E
+(constante e) y PI (constante {{$$}}\pi{{$$}}), y los métodos estáticos sumar,
+multiplicar, redondear, mayor y menor.*
 
     classdef Math
         % Clase Math

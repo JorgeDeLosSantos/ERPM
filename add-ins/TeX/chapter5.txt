@@ -4,6 +4,10 @@ Matemáticas
 Ecuación de la recta que pasa por dos puntos
 --------------------------------------------
 
+*Desarrolle un programa cuyos valores de entrada sean las coordenadas
+$(x_1,y_1)$ y $(x_2,y_2)$ de dos puntos y que devuelva en pantalla la
+ecuación de la recta que pasa por estos puntos.*
+
     x1=input('x1: ');
     y1=input('y1: ');
     x2=input('x2: ');

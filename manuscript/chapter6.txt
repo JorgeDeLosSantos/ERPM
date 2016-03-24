@@ -13,6 +13,10 @@ realizada por el usuario.
 El hola mundo en GUI
 --------------------
 
+*Desarrolle una interfaz gráfica que contenga un botón, el cual al ser
+presionado por el usuario deberá *responder* mostrando un cuadro de
+dialogo (msgbox) con la clásica cadena *hola mundo*.*
+
     function HolaMundo
     figure('MenuBar','None',...
         'NumberTitle','off',...
@@ -25,6 +29,10 @@ El hola mundo en GUI
 
 Ventana multicolor
 ------------------
+
+*Programe una interfaz gráfica que no contenga control gráfico alguno, y
+que solamente cambie de color a cada cierto tiempo, esto hasta que el
+usuario cierre la ventana correspondiente.*
 
     function CambiaColor
     f = figure('MenuBar','none',...
@@ -41,6 +49,11 @@ Ventana multicolor
 
 Lista de archivos M.
 --------------------
+
+*Desarrolle una GUI con un List Box, el cual debe contener una lista de
+los nombres de archivos \*.m ubicados en el mismo directorio. Al
+presionar cada uno de los elementos de la lista debe abrir el archivo
+seleccionado en el editor de MATLAB.*
 
     function ListaArchivosM
     figure('MenuBar','none',...
@@ -66,6 +79,13 @@ Lista de archivos M.
 
 Mini Calculadora
 ----------------
+
+*Diseñe y desarrolle una interfaz gráfica de usuario que asemeje el
+comportamiento de una calculadora muy sencilla. Debe contener cuatro
+botones correspondientes a los operadores aritméticos básicos, dos
+campos editables que permitan insertar los datos de entrada y otro campo
+estático o editable que permita mostrar el resultado de la operación
+realizada.*
 
     function MiniCalculadora
     figure('MenuBar','None',...
@@ -134,6 +154,15 @@ Mini Calculadora
 
 Visor de imágenes (Nivel I)
 ---------------------------
+
+*Desarrolle una GUI que funcione como un visor de imágenes simple, el
+cual debe contener un menú Archivo y dentro de este dos sub-menús
+llamados Abrir y Salir. La opción Abrir debe mostrar al usuario un
+explorador de archivos interactivo (uigetfile) que le permita
+seleccionar una imagen en formato PNG y enseguida mostrarla en un axes
+ubicado dentro la misma GUI (utilice las funciones imread e imshow para
+la manipulación de la imagen). La opción Salir, en este caso, es
+auto-descriptiva.*
 
     function AbrirImagen
     f = figure('MenuBar','None',...
