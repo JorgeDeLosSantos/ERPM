@@ -19,7 +19,7 @@ y3=-(x(x>2))+3;
 plot(x,[y1 y2 y3],'linewidth',2);
 ```
 
-![](images/graf_trozos.png)
+[](images/graf_trozos.png)
 
 ## Gráfica de una desigualdad (inecuación)
 

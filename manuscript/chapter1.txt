@@ -385,7 +385,7 @@ end
 desarrollará e imprimirá en pantalla su tabla de multiplicación del 1 al
 10, por ejemplo:*
 
-![](images/tablamult.png)
+[](images/tablamult.png)
 
 ```matlab
 N = input('Tabla del: ');
