@@ -14,7 +14,7 @@ utilizando un bucle for para recorrer el vector e ir comprobando, elemento a ele
 anterior es menor al actual. Suponemos, en principio, que el valor máximo es el primer elemento del vector 
 y enseguida hacemos la comprobación para el resto de elementos, tal como se muestra.
 
-\begin{matlab}
+\begin{verbatim}
 v=input('Vector: ');
 maxv=v(1);
 for i=2:length(v)
@@ -23,7 +23,7 @@ for i=2:length(v)
     end
 end
 fprintf('El valor maximo es %g\n\n',maxv);
-\end{matlab}
+\end{verbatim}
 
 \section{Matriz identidad}
 
@@ -32,14 +32,14 @@ como argumento la dimensión de la matriz (cuadrada) y devuelva una matriz ident
 
 \sol
 
-\begin{matlab}
+\begin{verbatim}
 function M = idmat(n)
 M(1:n,1:n)=0;
 for i=1:n
     M(i,i)=1;
 end
 end
-\end{matlab}
+\end{verbatim}
 
 
 \section{Elementos diferentes en un vector}
@@ -48,7 +48,7 @@ end
 
 \sol
 
-\begin{matlab}
+\begin{verbatim}
 v=input('Vector: ');
 v=sort(v);
 k=1;
@@ -58,7 +58,7 @@ for i=2:length(v)
     end
 end
 fprintf('Hay %d elementos diferentes\n\n',k);
-\end{matlab}
+\end{verbatim}
 
 \section{Ordenar elementos de un vector}
 
@@ -66,7 +66,7 @@ fprintf('Hay %d elementos diferentes\n\n',k);
 
 \sol
 
-\begin{matlab}
+\begin{verbatim}
 function xo = ordenarasc(x)
 % Ordena un vector en forma ascendente
 %
@@ -79,7 +79,7 @@ while i<=length(xo)
     i=i+ne;
 end
 end
-\end{matlab}
+\end{verbatim}
 
 \section{Adjunta de una matriz de 3x3}
 
@@ -87,7 +87,7 @@ end
 
 \sol
 
-\begin{matlab}
+\begin{verbatim}
 function X = adjunta3(A)
 % Calcula la adjunta de una matriz de 3x3
 % Entrada:
@@ -114,7 +114,7 @@ for i=1:size(A,1)
 end
 X=MC';
 end
-\end{matlab}
+\end{verbatim}
 
 
 \section{Inversa de una matriz 2x2}

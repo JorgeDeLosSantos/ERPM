@@ -1,0 +1,47 @@
+Cadenas de caracteres
+=====================
+
+Invertir una cadena de texto
+----------------------------
+
+En esencia lo que se debe hacer es *invertir* los indices del vector
+tipo char en el cual se guarda la cadena de texto.
+
+    cad=input('Introduzca una palabra: ','s');
+    disp(cad((end:-1:1)));
+
+Contar palabras
+---------------
+
+    txt = input('Inserte un texto: ','s');
+    resto = txt;
+    k = 0; % Inicializa contador
+    while true
+       [palabra, resto] = strtok(resto, ' ');
+       if isempty(palabra),  break;  end
+       k = k + 1;
+    end
+    fprintf('No. de palabras encontradas: %d\n\n',k);
+
+Contar vocales en una cadena de texto
+-------------------------------------
+
+    cad=input('Introduzca una cadena de texto: ','s');
+    k=0;
+    for i=1:length(cad)
+        switch cad(i)
+            case {'A','a','E','e','I','i','O','o','U','u'}
+                k=k+1;
+            otherwise
+                % ...
+        end
+    end
+    fprintf('Numero de vocales: %g\n\n',k);
+
+Ordenar palabras
+----------------
+
+Cifrado básico
+--------------
+
+![image](src/cifrado.png)

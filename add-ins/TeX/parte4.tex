@@ -11,13 +11,13 @@ x+2 & -\pi \le x\le 2  \\
 -x+3 & x>2  \\
 \end{array} \right.\]$$
 
-\begin{matlab}
+\begin{verbatim}
 x=-10:0.01:10;
 y1=sin(x(x<-pi));
 y2=x(x>=-pi & x<=2)+2;
 y3=-(x(x>2))+3;
 plot(x,[y1 y2 y3],'linewidth',2);
-\end{matlab}
+\end{verbatim}
 
 \begin{center}
 \includegraphics[scale=0.7]{src/graf_trozos.png}
@@ -32,7 +32,7 @@ graficará (vector de dos elementos).}
 
 \sol
 
-\begin{matlab}
+\begin{verbatim}
 function inecgraf(I,R)
 % Grafica una desigualdad (inecuacion) en un rango
 % especificado.
@@ -53,7 +53,7 @@ for i=1:length(f)
         h(i)=plot(x(f(i),c(i)),y(f(i),c(i)),'b*','MarkerSize',2);
 end
 end
-\end{matlab}
+\end{verbatim}
 
 \section{Gráfica de una esfera}
 

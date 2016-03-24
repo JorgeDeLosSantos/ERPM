@@ -14,19 +14,19 @@ La función rem de MATLAB devuelve 0 si el residuo de la división entera es nul
 si es una cantidad igual o mayor a la unidad. Basándonos en lo anterior podemos diseñar 
 un programa que ejecuta la comprobación y que muestre en pantalla si el número es par o impar.
 
-\begin{matlab}
+\begin{verbatim}
 num=input('Numero: ');
 if rem(num,2)==0
     disp('Numero par');
 else
     disp('Numero impar');
 end
-\end{matlab}
+\end{verbatim}
 
 El programa anterior utiliza la sentencia compuesta if-else para llevar a cabo dicha tarea. 
 Es posible también usar la sentencia switch tal como se muestra enseguida, los resultados, desde luego, son iguales.
 
-\begin{matlab}
+\begin{verbatim}
 num=input('Numero: ');
 switch rem(num,2)
     case 0
@@ -34,7 +34,7 @@ switch rem(num,2)
     otherwise
         disp('Numero impar');
 end
-\end{matlab}
+\end{verbatim}
 
 % ------------------------------------------------------------------------------------------------
 
@@ -57,11 +57,11 @@ de la cantidad de número pares requeridos. Por ejemplo, si se requieren 3 núme
 el último valor sea 6, que es equivalente a tener 2x3, así, de forma generalizada, el valor final será 
 2n, donde n es la cantidad de números pares.
 
-\begin{matlab}
+\begin{verbatim}
 n=input('¿Cuantos numeros pares necesita? ');
 pares=2:2:2*n;
 disp(pares);
-\end{matlab}
+\end{verbatim}
 
 % ----------------------------------------------------------------------------------------------------------
 
@@ -78,7 +78,7 @@ Así, un programa básico puede estructurarse haciendo la comprobación, uno a u
 $[1, n]$ es divisor del número en cuestión. Si la cantidad de divisores es mayor a 2, entonces el número 
 no es primo. Véase el código siguiente propuesto como solución:
 
-\begin{matlab}
+\begin{verbatim}
 function r = esprimo(n)
 L=1:n;
 if nnz(rem(n,L)==0)==2
@@ -87,7 +87,7 @@ else
     r=false;
 end
 end
-\end{matlab}
+\end{verbatim}
 
 En resúmen: sea define un vector $L$ de $n$ elementos que contiene todos los números en el intervalo $[1,n]$, 
 enseguida se aplica la función {\tt rem} a todos los elementos del vector $L$ y a esto se aplica la condición 
@@ -113,13 +113,13 @@ $$P=2 \pi r$$
 
 Con lo anterior se plantea una solución:
 
-\begin{matlab}
+\begin{verbatim}
 radio=input('Radio del círculo: ');
 area=pi*radio^2;
 perimetro=2*pi*radio;
 fprintf('Área: %g \n',area);
 fprintf('Perímetro: %g \n',perimetro);
-\end{matlab}
+\end{verbatim}
 
 % ============================================================================================================
 
@@ -135,7 +135,7 @@ conversión resultan en:
 $$\theta_r = \theta_g \left(\frac{\pi}{180}\right)$$
 $$\theta_g = \theta_r \left(\frac{180}{\pi}\right)$$
 
-\begin{matlab}
+\begin{verbatim}
 opcion=input(['Seleccione una opción: \n 1. Grados a radianes'...
 '\n 2. Radianes a grados \n']);
 theta=input('Inserte la magnitud del angulo: ');
@@ -149,7 +149,7 @@ switch opcion
     otherwise
         disp('Opcion incorrecta');
 end
-\end{matlab}
+\end{verbatim}
 
 
 % ============================================================================================================
@@ -159,13 +159,13 @@ end
 
 \sol
 
-\begin{matlab}
+\begin{verbatim}
 n=input('Cantidad de datos a introducir: ');
 for i=1:n
     D(i)=input(['Dato ',num2str(i),': ']);
 end
 fprintf('El promedio de los datos introducidos es %g\n',mean(D));
-\end{matlab}
+\end{verbatim}
 
 
 % ============================================================================================================
@@ -186,14 +186,14 @@ La implementación en MATLAB resulta muy sencilla, se definen inicialmente los d
 enseguida se concatenan los valores de la sucesión que siguen el patrón mencionado, mediante un bucle. 
 Un código de ejemplo se muestra a continuación:
 
-\begin{matlab}
+\begin{verbatim}
 n=input('Numero de terminos a mostrar: ');
 F=[1 1];
 for i=3:n
     F(i)=F(i-1)+F(i-2);
 end
 disp(F);
-\end{matlab}
+\end{verbatim}
 
 
 % ============================================================================================================
@@ -208,13 +208,13 @@ múltiplos de un número $N$ cualesquiera, vienen dado por $<1,2,...,k-1,k>*N$. 
 en MATLAB es muy sencilla, utilizando la notación de dos puntos para crear un vector cuyos elementos 
 sean los enteros desde 1 hasta $k$.
 
-\begin{matlab}
+\begin{verbatim}
 function x = multiplos(num,k)
 % Devuelve los primeros k multiplos de num.
 %
 x=(1:k)*num;
 end
-\end{matlab}
+\end{verbatim}
 
 
 % ============================================================================================================
@@ -230,7 +230,7 @@ La solución general de una ecuación de segundo grado de la forma $ax^2+bx+c=0$
 
 $$x_{1,2}=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$
 
-\begin{matlab}
+\begin{verbatim}
 function [x1,x2]=ecuadratica(a,b,c)
 % Resuelve una ecuacion de segundo orden, siendo
 % los argumentos de entrada los coeficientes de
@@ -238,7 +238,7 @@ function [x1,x2]=ecuadratica(a,b,c)
 x1=(-b+sqrt(b^2-4*a*c))/(2*a);
 x2=(-b-sqrt(b^2-4*a*c))/(2*a);
 end
-\end{matlab}
+\end{verbatim}
 
 
 \section{Tiempo de vida}
@@ -247,7 +247,7 @@ end
 
 \sol
 
-\begin{matlab}
+\begin{verbatim}
 D=input('Día de nacimiento: ');
 M=input('Mes de nacimiento: ');
 A=input('Anio de nacimiento: ');
@@ -258,7 +258,7 @@ fprintf('Anios = %g \n',(actual-nac)/365);
 fprintf('Meses = %g \n',(actual-nac)/30);
 fprintf('Dias = %g \n',(actual-nac));
 fprintf('Horas = %g \n',(actual-nac)*24);
-\end{matlab}
+\end{verbatim}
 
 
 % =========================================================================================================
@@ -274,7 +274,7 @@ del número aleatorio con el número propuesto por el jugador. Además se utiliz
 cada vez que se ejecuta un ciclo. El ciclo se \textit{rompe} cuando el jugador adivina el número mediante la 
 instrucción \texttt{break}.
 
-\begin{matlab}
+\begin{verbatim}
 n=randi([1 100]);
 k=0;
 while 1
@@ -289,7 +289,7 @@ while 1
     end
 end
 fprintf('Lo has conseguido en %g intentos \n',k);
-\end{matlab}
+\end{verbatim}
 
 % =========================================================================================================
 \section{Imprimir rombo} 
@@ -305,7 +305,7 @@ los resultados para n=3 y n=7.}
 
 \sol
 
-\begin{matlab}
+\begin{verbatim}
 n=input('Numero de filas del rombo: ');
 R='';
 for i=1:n
@@ -316,7 +316,7 @@ for i=1:n
     end
 end
 disp(R);
-\end{matlab}
+\end{verbatim}
 
 \section{Factorial de un número}
 
@@ -326,7 +326,7 @@ introducido (Recuerde que por definición el factorial de 0 es igual a la unidad
 
 \sol
 
-\begin{matlab}
+\begin{verbatim}
 N=input('Introduzca un numero entero: ');
 k=1;
 fact=1;
@@ -335,7 +335,7 @@ while k<=N
     k=k+1;
 end
 fprintf('\n %d! = %d\n\n',N,fact);
-\end{matlab}
+\end{verbatim}
 
 
 \section{Imprimir triángulo}
@@ -344,21 +344,21 @@ fprintf('\n %d! = %d\n\n',N,fact);
 
 \sol
 
-\begin{matlab}
+\begin{verbatim}
 n=input('Numero de filas: ');
 A='';
 for i=1:n
     A(i,1:2:2*i)='*';
 end
 disp(A)
-\end{matlab}
+\end{verbatim}
 
 
 \section{Sumatoria de n múltiplos de 5}
 
 \enunciado{Escriba un programa que devuelva la suma de los primeros n múltiplos de 5, que además cumplan la condición de no ser múltiplos de 10.}
 
-\begin{matlab}
+\begin{verbatim}
 N=input('Multiplos a sumar: ');
 suma=0;
 mult=5;
@@ -371,13 +371,13 @@ while k<N
     mult=mult+5;
 end
 disp(suma);
-\end{matlab}
+\end{verbatim}
 
 \section{Tabla de funciones trigonométricas}
 
 \enunciado{Desarrolle un programa que imprima una tabla de valores para las funciones trigonométricas más comunes en el rango 0° a 45° (seno, coseno y tangente).}
 
-\begin{matlab}
+\begin{verbatim}
 fprintf('====================================\n');
 fprintf('°    sin(x)      cos(x)      tan(x)\n');
 fprintf('====================================\n');
@@ -385,7 +385,7 @@ for x=0:pi/180:pi/4
     fprintf('%0.0f \t %0.4f \t %0.4f \t %0.4f\n',...
         x*(180/pi),sin(x),cos(x),tan(x));
 end
-\end{matlab}
+\end{verbatim}
 
 \section{Tabla de multiplicar} 
 
@@ -397,9 +397,9 @@ end
 
 \sol
 
-\begin{matlab}
+\begin{verbatim}
 N = input('Tabla del: ');
 for k = 1:10
     fprintf('%g x %g = %g\n',N,k,N*k);
 end
-\end{matlab}
+\end{verbatim}

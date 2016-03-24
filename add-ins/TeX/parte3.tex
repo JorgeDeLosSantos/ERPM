@@ -10,10 +10,10 @@ introduce MATLAB deberá devolverle BALTAM.}
 En esencia lo que se debe hacer es \textit{invertir} los indices del vector tipo char en 
 el cual se guarda la cadena de texto.
 
-\begin{matlab}
+\begin{verbatim}
 cad=input('Introduzca una palabra: ','s');
 disp(cad((end:-1:1)));
-\end{matlab}
+\end{verbatim}
 
 \section{Contar palabras}
 
@@ -24,7 +24,7 @@ puntuación u otro tipo de caracteres diferentes a los alfanuméricos.}
 
 \sol
 
-\begin{matlab}
+\begin{verbatim}
 txt = input('Inserte un texto: ','s');
 resto = txt;
 k = 0; % Inicializa contador
@@ -34,7 +34,7 @@ while true
    k = k + 1;
 end
 fprintf('No. de palabras encontradas: %d\n\n',k);
-\end{matlab}
+\end{verbatim}
 
 
 \section{Contar vocales en una cadena de texto}
@@ -43,7 +43,7 @@ fprintf('No. de palabras encontradas: %d\n\n',k);
 
 \sol
 
-\begin{matlab}
+\begin{verbatim}
 cad=input('Introduzca una cadena de texto: ','s');
 k=0;
 for i=1:length(cad)
@@ -55,7 +55,7 @@ for i=1:length(cad)
     end
 end
 fprintf('Numero de vocales: %g\n\n',k);
-\end{matlab}
+\end{verbatim}
 
 
 \section{Ordenar palabras}

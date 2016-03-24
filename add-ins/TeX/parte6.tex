@@ -12,7 +12,7 @@ es programado para responder a una determinada acción realizada por el usuario.
 
 \sol
 
-\begin{matlab}
+\begin{verbatim}
 function HolaMundo
 figure('MenuBar','None',...
     'NumberTitle','off',...
@@ -22,7 +22,7 @@ uicontrol('style','push',...
     'String','Botón',...
     'Callback','msgbox(''Hola mundo'')');
 end
-\end{matlab}
+\end{verbatim}
 
 \section{Ventana multicolor}
 
@@ -30,7 +30,7 @@ end
 
 \sol
 
-\begin{matlab}
+\begin{verbatim}
 function CambiaColor
 f = figure('MenuBar','none',...
     'NumberTitle','off',...
@@ -43,7 +43,7 @@ while ishandle(f)
 end
  
 end
-\end{matlab}
+\end{verbatim}
 
 \section{Lista de archivos M.}
 
@@ -51,7 +51,7 @@ end
 
 \sol
 
-\begin{matlab}
+\begin{verbatim}
 function ListaArchivosM
 figure('MenuBar','none',...
     'NumberTitle','off',...
@@ -73,7 +73,7 @@ uicontrol('style','listbox',...
         edit(str{k});
     end
 end
-\end{matlab}
+\end{verbatim}
 
 \section{Mini Calculadora}
 
@@ -81,7 +81,7 @@ end
 
 \sol
 
-\begin{matlab}
+\begin{verbatim}
 function MiniCalculadora
 figure('MenuBar','None',...
     'NumberTitle','off',...
@@ -146,7 +146,7 @@ end
     end
  
 end
-\end{matlab}
+\end{verbatim}
 
 \section{Visor de imágenes (Nivel I)}
 
@@ -154,7 +154,7 @@ end
 
 \sol
 
-\begin{matlab}
+\begin{verbatim}
 function AbrirImagen
 f = figure('MenuBar','None',...
     'NumberTitle','off',...
@@ -180,4 +180,4 @@ ax = axes('Units','Normalized',...
         end
     end
 end
-\end{matlab}
+\end{verbatim}
