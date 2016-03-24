@@ -61,10 +61,10 @@ Cifrado básico
 --------------
 
 *El método de cifrado más simple es el cifrado por desplazamiento, que
-consiste en remplazar un caracter por otro ubicado <span>**n**</span>
+consiste en remplazar un caracter por otro ubicado **n**
 posiciones a la derecha en la tabla de código ASCII. Por ejemplo, si
-tenemos la palabra <span>**perro**</span>, y queremos cifrarla
-desplazando tres lugares obtendríamos: <span>**shuur**</span>. En la
+tenemos la palabra **perro**, y queremos cifrarla
+desplazando tres lugares obtendríamos: **shuur**. En la
 figura siguiente se muestra un esquema de lo anterior.*
 
 ![image](src/cifrado.png)

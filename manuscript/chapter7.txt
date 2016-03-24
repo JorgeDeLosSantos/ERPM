@@ -34,7 +34,7 @@ Clase Math (Métodos estáticos)
 ------------------------------
 
 *Desarrolle una clase Math que contenga los atributos constantes E
-(constante e) y PI (constante {{$$}}\pi{{$$}}), y los métodos estáticos sumar,
+(constante e) y PI (constante {$$}\pi{$$}), y los métodos estáticos sumar,
 multiplicar, redondear, mayor y menor.*
 
     classdef Math

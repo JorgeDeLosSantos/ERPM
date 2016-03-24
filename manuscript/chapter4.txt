@@ -6,12 +6,12 @@ Gráfica de una función a trozos
 
 *Escriba un programa que grafique la siguiente función a trozos:*
 
-{{$$}}{{$$}}\[f(x)=\left\{ 
+{$$}\[f(x)=\left\{ 
 \begin{array}{cc}
 \sin (x) & x<-\pi   \\
 x+2 & -\pi \le x\le 2  \\
 -x+3 & x>2  \\
-\end{array} \right.\]{{$$}}{{$$}}
+\end{array} \right.\]{$$}
 
     x=-10:0.01:10;
     y1=sin(x(x<-pi));
@@ -55,5 +55,5 @@ Gráfica de una esfera
 ---------------------
 
 *Desarrolle una función `esfera` cuyos parámetros de entrada sean: el
-radio, y las coordenadas {{$$}}x,y,z{{$$}} del centro. Con los datos anteriores
+radio, y las coordenadas {$$}x,y,z{$$} del centro. Con los datos anteriores
 trace una esfera, apoyándose en la función `sphere` nativa de MATLAB.*

@@ -4,10 +4,6 @@
 
 \textit{Desarrolle un programa que determine si un número es par o impar.}
 
-\sol
-
-
-
 Este ejercicio es uno de los más comunes en los cursos básicos de programación. 
 Para resolverlo hay que tener en cuenta algunas nociones básicas de matemáticas: es 
 sabido que cualquier número par es divisible por 2, lo cual nos lleva al supuesto de que 
@@ -44,7 +40,7 @@ end
 
 \textit{Desarrolle un programa que proporcione los primeros números pares que se indiquen:}
 
-\sol
+
 
 Para desarrollar la solución a este problema se hará uso del operador {\it dos puntos}, el cual 
 permite crear una lista o vector de valores numéricos con un cierto patrón, con la sintaxis:
@@ -73,7 +69,7 @@ disp(pares);
 es primo, en caso de serlo devolverá un valor lógico {\tt true} y un valor {\tt false} en caso contrario. 
 (La función {\tt isprime} de MATLAB realiza la misma operación).}
 
-\sol
+
 
 Primero, sin tantos formalismos, un número primo es aquel cuyos únicos divisores son el uno y él mismo. 
 Así, un programa básico puede estructurarse haciendo la comprobación, uno a uno, si cada número en el intervalo 
@@ -105,7 +101,7 @@ número primo.
 \textit{Escriba un programa cuya entrada sea el radio del círculo e imprima el valor del área y 
 perímetro correspondiente.}
 
-\sol
+
 
 Para resolver este problema, lo primero es remitirnos a los cursos de geometría básica y recordar 
 que el área y perímetro (circunferencia) de un círculo vienen dados por:
@@ -129,7 +125,7 @@ fprintf('Perímetro: %g \n',perimetro);
 
 \textit{Utilice cualquier sentencia de selección múltiple para desarrollar un programa que le permita hacer la conversión de grados sexagesimales a radianes y viceversa.}
 
-\sol
+
 
 Sea $\theta_r$ un ángulo dado en radianes y $\theta_g$ en grados sexagesimales, las {\it formulas} de 
 conversión resultan en:
@@ -159,7 +155,7 @@ end
 
 \textit{Realice un programa que pida la cantidad de elementos o datos a introducir y que posteriormente sean ingresados manualmente, con los datos anteriores calcular el promedio de los mismos.}
 
-\sol
+
 
 \begin{verbatim}
 n=input('Cantidad de datos a introducir: ');
@@ -175,7 +171,7 @@ fprintf('El promedio de los datos introducidos es %g\n',mean(D));
 
 \textit{Escriba un programa que imprima en pantalla los primeros n términos de la sucesión de Fibonacci.}
 
-\sol
+
 
 La sucesión de Fibonacci es una sucesión infinita de números naturales, cuyos términos resultan de la 
 suma de los dos términos anteriores. Los primeros dos términos son 1 y 1, y enseguida el resto siguen 
@@ -203,7 +199,7 @@ disp(F);
 
 \textit{Desarrolle una función que devuelva los primeros k múltiplos de un determinado número.}
 
-\sol
+
 
 Un múltiplo de un número es aquel que lo contiene un número entero de veces. Luego, los primeros $k$ 
 múltiplos de un número $N$ cualesquiera, vienen dado por $<1,2,...,k-1,k>*N$. La implementación 
@@ -225,7 +221,7 @@ end
 \textit{Escriba una función que le permita resolver una ecuación de segundo grado de la forma 
 $ax^2+bx+c=0$, siendo los coeficientes los argumentos de entrada y las raíces de la ecuación los valores de salida.}
 
-\sol
+
 
 La solución general de una ecuación de segundo grado de la forma $ax^2+bx+c=0$ viene dada por la tan conocida 
 {\bf formula general}.
@@ -247,7 +243,7 @@ end
 
 \textit{Desarrolle un script que le permita calcular el número de años, meses, días y horas que ha vivido un individuo.}
 
-\sol
+
 
 \begin{verbatim}
 D=input('Día de nacimiento: ');
@@ -268,7 +264,7 @@ fprintf('Horas = %g \n',(actual-nac)*24);
 
 \textit{Escriba un programa que genere un número entero aleatorio entre 1 y 100, y posteriormente le pida al usuario tratar de adivinar el número en cuestión, para cada intento el programa debe mostrar si el número que se trata de adivinar es mayor o menor al propuesto por el jugador. El programa termina cuando el jugador adivina el número, imprimiéndose en pantalla la cantidad de intentos realizados.}
 
-\sol
+
 
 Para generar el número entero aleatorio en el rango $[1,100]$ se utilizará la función \texttt{randi}, que devuelve un 
 entero aleatorio en el intervalo que se especifique. Dentro de un bucle while se hacen las comprobaciones de equivalencia 
@@ -305,7 +301,7 @@ los resultados para n=3 y n=7.}
 \includegraphics[scale=1]{src/rombo.png}
 \end{center}
 
-\sol
+
 
 \begin{verbatim}
 n=input('Numero de filas del rombo: ');
@@ -326,7 +322,7 @@ disp(R);
 de todos los enteros desde 1 hasta n. Realice un programa que devuelva el factorial de un número 
 introducido (Recuerde que por definición el factorial de 0 es igual a la unidad).}
 
-\sol
+
 
 \begin{verbatim}
 N=input('Introduzca un numero entero: ');
@@ -344,7 +340,7 @@ fprintf('\n %d! = %d\n\n',N,fact);
 
 \textit{Realice un script que imprima en pantalla un triángulo de asteriscos, el programa debe tener como entrada el número de filas del triángulo.}
 
-\sol
+
 
 \begin{verbatim}
 n=input('Numero de filas: ');
@@ -397,7 +393,7 @@ end
 \includegraphics[scale=0.8]{src/tablamult.png}
 \end{center}
 
-\sol
+
 
 \begin{verbatim}
 N = input('Tabla del: ');

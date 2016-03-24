@@ -119,17 +119,17 @@ una matriz de 2x2. Evite usar la función `inv` de MATLAB.*
 
 Una matriz de 2x2 tiene la forma general:
 
-{{$$}}{{$$}}A=\left[
+{$$}A=\left[
 \begin{array}{cc}
 a & b \\
 c & d \\
 \end{array}
-\right]{{$$}}{{$$}}
+\right]{$$}
 
 Del álgebra lineal sabemos que la inversa de una matriz de esta forma
 viene dada por:
 
-{{$$}}{{$$}}A^{-1}=\frac{1}{det(A)}
+{$$}A^{-1}=\frac{1}{det(A)}
 \left[
 \begin{array}{cc}
 d & -c \\
@@ -140,6 +140,6 @@ d & -c \\
 \left[ \begin{array}{cc}
 d & -c \\
 -b & a \\
-\end{array} \right]{{$$}}{{$$}}
+\end{array} \right]{$$}
 
 Implementando lo anterior en MATLAB:
