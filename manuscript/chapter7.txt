@@ -1,8 +1,6 @@
-POO
-===
+# POO
 
-La clase Persona
-----------------
+## La clase Persona
 
 *Defina una clase llamada Persona, cuyos atributos serán nombre y edad,
 mismos que serán pasados como argumento en el constructor de la clase.
@@ -10,69 +8,72 @@ Además, la clase debe contener un método crecer que recibirá como
 argumento un entero positivo que indicará los años que *crecerá* el
 objeto, desde luego modificando el atributo edad.*
 
-    classdef Persona < handle
-        
-        properties
-            nombre;
-            edad;
-        end
-        
-        methods
-            function obj = Persona(nombre,edad)
-                obj.nombre = nombre;
-                obj.edad = edad;
-            end
-            
-            function crecer(obj,anios)
-                obj.edad = obj.edad + anios;
-            end
-        end
-        
+```matlab
+classdef Persona < handle
+    
+    properties
+        nombre;
+        edad;
     end
+    
+    methods
+        function obj = Persona(nombre,edad)
+            obj.nombre = nombre;
+            obj.edad = edad;
+        end
+        
+        function crecer(obj,anios)
+            obj.edad = obj.edad + anios;
+        end
+    end
+    
+end
+```
 
-Clase Math (Métodos estáticos)
-------------------------------
+## Clase Math (Métodos estáticos)
 
 *Desarrolle una clase Math que contenga los atributos constantes E
-(constante e) y PI (constante {$$}\pi{$$}), y los métodos estáticos sumar,
+(constante e) y PI (constante {$$}\pi{/$$}), y los métodos estáticos sumar,
 multiplicar, redondear, mayor y menor.*
 
-    classdef Math
-        % Clase Math
-        
-        properties (Constant = true)
-            % Atributos constantes
-            PI = pi;
-            E = exp(1);
+```matlab
+classdef Math
+    % Clase Math
+    
+    properties (Constant = true)
+        % Atributos constantes
+        PI = pi;
+        E = exp(1);
+    end
+    
+    methods (Static)
+        % Métodos estáticos
+        function r = sumar(a,b)
+            r = a + b;
         end
         
-        methods (Static)
-            % Métodos estáticos
-            function r = sumar(a,b)
-                r = a + b;
-            end
-            
-            function r = multiplicar(a,b)
-                r = a * b;
-            end
-            
-            function r = redondear(n)
-                r = round(n);
-            end
-            
-            function r = mayor(a,b)
-                r = a;
-                if b > a
-                    r = b;
-                end
-            end
-            
-            function r = menor(a,b)
-                r = a;
-                if b < a
-                    r = b;
-                end
+        function r = multiplicar(a,b)
+            r = a * b;
+        end
+        
+        function r = redondear(n)
+            r = round(n);
+        end
+        
+        function r = mayor(a,b)
+            r = a;
+            if b > a
+                r = b;
             end
         end
         
-    end  
+        function r = menor(a,b)
+            r = a;
+            if b < a
+                r = b;
+            end
+        end
+    end
+    
+end  
+```
