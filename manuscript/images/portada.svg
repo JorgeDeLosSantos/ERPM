@@ -23,15 +23,27 @@
      id="defs4">
     <linearGradient
        inkscape:collect="always"
-       id="linearGradient3286">
+       id="linearGradient3386">
       <stop
-         style="stop-color:#ff9955;stop-opacity:1;"
+         style="stop-color:#ffaaaa;stop-opacity:1;"
          offset="0"
-         id="stop3288" />
+         id="stop3388" />
       <stop
-         style="stop-color:#ff9955;stop-opacity:0;"
+         style="stop-color:#ffaaaa;stop-opacity:0;"
          offset="1"
-         id="stop3290" />
+         id="stop3390" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient3368">
+      <stop
+         style="stop-color:#ececec;stop-opacity:1;"
+         offset="0"
+         id="stop3370" />
+      <stop
+         style="stop-color:#ececec;stop-opacity:0;"
+         offset="1"
+         id="stop3372" />
     </linearGradient>
     <filter
        id="filter4627"
@@ -1746,12 +1758,24 @@
     </filter>
     <linearGradient
        inkscape:collect="always"
-       xlink:href="#linearGradient3286"
-       id="linearGradient3292"
-       x1="-24.243767"
-       y1="1084.6871"
-       x2="2553.6655"
-       y2="-2228.6133"
+       xlink:href="#linearGradient3368"
+       id="linearGradient3374"
+       x1="721.43213"
+       y1="-2403.9226"
+       x2="853.04639"
+       y2="2350.3625"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.89402174,0,0,1,87.927186,0)" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3386"
+       id="radialGradient3392"
+       cx="1297.1274"
+       cy="-584.08484"
+       fx="1297.1274"
+       fy="-584.08484"
+       r="1305.2086"
+       gradientTransform="matrix(-1.7087389,1.9143126,-1.8883974,-1.6856066,2410.5952,-4051.7295)"
        gradientUnits="userSpaceOnUse" />
   </defs>
   <sodipodi:namedview
@@ -1761,9 +1785,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.12374369"
+     inkscape:zoom="0.043750001"
      inkscape:cx="351.38071"
-     inkscape:cy="1812.9953"
+     inkscape:cy="1784.2757"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -1781,7 +1805,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -1791,7 +1815,7 @@
      id="layer1"
      transform="translate(0,2247.6378)">
     <rect
-       style="fill:url(#linearGradient3292);fill-opacity:1;fill-rule:nonzero;stroke:none"
+       style="fill:url(#radialGradient3392);fill-opacity:1;fill-rule:nonzero;stroke:none"
        id="rect2996"
        width="2610.4172"
        height="3353.7063"
@@ -1806,57 +1830,60 @@
        height="960.12323"
        width="1196.7413" />
     <rect
-       style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       style="fill:url(#linearGradient3374);fill-opacity:1;fill-rule:nonzero;stroke:none"
        id="rect3009"
-       width="2973.8892"
-       height="864.69049"
-       x="-161.62444"
-       y="-1743.7402"
+       width="2658.7214"
+       height="969.74634"
+       x="-56.568573"
+       y="-1848.7961"
        ry="0" />
     <text
        xml:space="preserve"
-       style="font-size:223.06983948px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Verdana;-inkscape-font-specification:Verdana Bold"
-       x="1773.1122"
-       y="-1024.9481"
+       style="font-size:257.39938353999997000px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000080;fill-opacity:1;stroke:none;font-family:Verdana;-inkscape-font-specification:Verdana Bold"
+       x="1784.4395"
+       y="-1062.969"
        id="text3014"
        sodipodi:linespacing="125%"
-       transform="scale(0.7296031,1.3706082)"><tspan
+       transform="scale(0.71576143,1.3971136)"><tspan
          sodipodi:role="line"
          id="tspan3016"
-         x="1773.1122"
-         y="-1024.9481"
-         style="fill:#162d50">Ejercicios resueltos de</tspan><tspan
+         x="1784.4395"
+         y="-1062.969"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#000080;font-family:Open Sans;-inkscape-font-specification:Open Sans Bold">Ejercicios resueltos de</tspan><tspan
          sodipodi:role="line"
-         x="1773.1122"
-         y="-746.11084"
+         x="1784.4395"
+         y="-741.21973"
          id="tspan3018"
-         style="fill:#162d50">programación en MATLAB</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#000080;font-family:Open Sans;-inkscape-font-specification:Open Sans Bold">programación en MATLAB</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:117.63615417000000000px;font-style:oblique;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#280b0b;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:Times New Roman"
-       x="1608.5269"
-       y="532.86462"
+       style="font-size:100.00382233px;font-style:oblique;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#800080;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:Times New Roman"
+       x="1381.6522"
+       y="521.68695"
        id="text3024"
        sodipodi:linespacing="125%"
-       transform="scale(0.80734771,1.2386237)"><tspan
+       transform="scale(0.94969647,1.052968)"><tspan
          sodipodi:role="line"
          id="tspan3026"
-         x="1608.5269"
-         y="532.86462">Pedro Jorge De Los Santos</tspan></text>
+         x="1381.6522"
+         y="521.68695"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#800080;font-family:Droid Sans;-inkscape-font-specification:Droid Sans Bold">Pedro Jorge De Los Santos</tspan></text>
     <g
-       transform="matrix(0.58403268,0,0,0.58403268,38.648766,431.63289)"
+       transform="matrix(0.58403268,0,0,0.58403268,87.136087,342.73947)"
        id="layer1-9"
-       inkscape:label="Layer 1">
+       inkscape:label="Layer 1"
+       style="fill:#000000">
       <g
          transform="matrix(0.78603024,0,0,0.78603024,-73.234103,236.27252)"
-         id="g4489">
+         id="g4489"
+         style="fill:#000000">
         <path
-           style="fill:#008080;fill-opacity:1;stroke:none"
+           style="fill:#000000;fill-opacity:1;stroke:none"
            d="m 299.9396,737.29429 c -23.25445,0.35906 -46.73617,6.87875 -67.86178,20.16582 -0.43693,0.27482 -0.87509,0.54682 -1.30768,0.82591 46.19475,-21.95767 102.52105,-6.37235 130.42402,37.99159 29.42013,46.77613 16.43335,108.48576 -29.38843,139.37131 l -2.753,1.78945 c -47.84335,30.09135 -111.00061,15.70192 -141.09195,-32.14143 -11.2048,-17.81491 -16.25298,-37.76405 -15.69218,-57.33151 -4.8863,30.41427 0.82479,62.65588 18.51401,90.78063 38.65332,61.45634 119.82961,79.94854 181.28595,41.2952 l 3.44126,-2.27123 C 434.3694,938.09655 451.15486,858.84079 413.36377,798.75532 387.99751,758.42459 344.33443,736.60881 299.9396,737.29429 z"
            id="path4033-8"
            inkscape:connector-curvature="0" />
         <path
-           style="fill:#008080;fill-opacity:1;stroke:none"
+           style="fill:#000000;fill-opacity:1;stroke:none"
            d="m 279.34286,688.66369 c -20.86215,0.31424 -42.00594,4.73217 -62.29861,13.67791 -81.17073,35.78297 -117.957305,130.59647 -82.17433,211.7672 l 2.43103,5.28951 c 34.2786,70.67763 113.81865,105.17499 187.40342,84.71219 -61.29554,11.3315 -124.72941,-19.02776 -153.07507,-77.47252 l -2.16388,-4.67507 c -31.55031,-71.56928 0.8809,-155.18524 72.45019,-186.73555 71.56928,-31.55031 155.18524,0.90762 186.73555,72.4769 9.77462,22.17292 13.39114,45.49278 11.62088,68.06899 5.01233,-29.85724 1.66452,-61.48408 -11.46059,-91.25732 -26.83723,-60.87805 -86.88213,-96.79498 -149.46859,-95.85224 z"
            id="path3245"
            inkscape:connector-curvature="0" />
