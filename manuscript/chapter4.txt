@@ -4,12 +4,14 @@
 
 *Escriba un programa que grafique la siguiente función a trozos:*
 
-{$$}\[f(x)=\left\{ 
+{$$}
+f(x)=\left\{ 
 \begin{array}{cc}
 \sin (x) & x<-\pi   \\
 x+2 & -\pi \le x\le 2  \\
 -x+3 & x>2  \\
-\end{array} \right.\]{/$$}
+\end{array} \right.
+{/$$}
 
 ```matlab
 x=-10:0.01:10;
