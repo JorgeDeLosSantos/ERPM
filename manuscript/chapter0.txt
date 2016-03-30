@@ -1,4 +1,4 @@
-Acerca de... {#acerca-de... .unnumbered}
+﻿Acerca de... {#acerca-de... .unnumbered}
 ============
 
 Este pequeño *libro* se ha escrito con la finalidad de aportar una
@@ -21,3 +21,10 @@ plataformas cuyos enlaces se incluyen en la parte inferior.\
 [![image](src/github_logo.png)](https://github.com/JorgeDeLosSantos)
 [![image](src/linkedin_logo.png)](https://www.linkedin.com/in/pjdlsl)
 [![image](src/google_logo.png)](https://plus.google.com/u/0/+pjdelossantos)
+
+
+
+## Otras modificaciones para hacer "push" desde el "padre"
+
+
+## Otra ID-PUSHPARENT
