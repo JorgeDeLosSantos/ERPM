@@ -1,6 +1,8 @@
 ## Ejercicios resueltos de programación en MATLAB
 
-<img src="src/portada.png" width="150" height="210">
+<a href="https://leanpub.com/erpm/">
+	<img src="https://s3.amazonaws.com/titlepages.leanpub.com/erpm/hero?1458941044" width="170px" height="220px">
+</a>
 
 ### Contenido
 
@@ -11,11 +13,6 @@
 * Parte 5. Matemáticas
 * Parte 6. Interfaces gráficas de usuario
 * Parte 7. Programación orientada a objetos
-
-### Descargar PDF
-
-[Versión actual (0.1) (En desarrollo)](https://goo.gl/jY97Ir)
-
 
 ### Contribuciones / Más información
 
