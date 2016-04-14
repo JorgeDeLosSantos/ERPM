@@ -14,28 +14,24 @@ nulo, y devuelve 1 si es una cantidad igual o mayor a la unidad.
 Basándonos en lo anterior podemos diseñar un programa que ejecuta la
 comprobación y que muestre en pantalla si el número es par o impar.
 
-```matlab
-num=input('Numero: ');
-if rem(num,2)==0
-    disp('Numero par');
-else
-    disp('Numero impar');
-end
-```
+    num=input('Numero: ');
+    if rem(num,2)==0
+        disp('Numero par');
+    else
+        disp('Numero impar');
+    end
 
 El programa anterior utiliza la sentencia compuesta if-else para llevar
 a cabo dicha tarea. Es posible también usar la sentencia switch tal como
 se muestra enseguida, los resultados, desde luego, son iguales.
 
-```matlab
-num=input('Numero: ');
-switch rem(num,2)
-    case 0
-        disp('Numero par');
-    otherwise
-        disp('Numero impar');
-end
-```
+    num=input('Numero: ');
+    switch rem(num,2)
+        case 0
+            disp('Numero par');
+        otherwise
+            disp('Numero impar');
+    end
 
 ## Lista de números pares
 
