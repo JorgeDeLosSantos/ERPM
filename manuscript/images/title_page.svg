@@ -15,7 +15,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.5 r10040"
-   sodipodi:docname="portada.svg"
+   sodipodi:docname="title_page.svg"
    inkscape:export-filename="C:\Users\User\Desktop\LABPro\_books_\PB1503 - ERPM\ERPM\manuscript\images\title_page.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90">
@@ -23,15 +23,15 @@
      id="defs4">
     <linearGradient
        inkscape:collect="always"
-       id="linearGradient3386">
+       id="linearGradient3290">
       <stop
-         style="stop-color:#ffaaaa;stop-opacity:1;"
+         style="stop-color:#008080;stop-opacity:1;"
          offset="0"
-         id="stop3388" />
+         id="stop3292" />
       <stop
-         style="stop-color:#ffaaaa;stop-opacity:0;"
+         style="stop-color:#008080;stop-opacity:0;"
          offset="1"
-         id="stop3390" />
+         id="stop3294" />
     </linearGradient>
     <linearGradient
        inkscape:collect="always"
@@ -1768,14 +1768,14 @@
        gradientTransform="matrix(0.89402174,0,0,1,87.927186,0)" />
     <radialGradient
        inkscape:collect="always"
-       xlink:href="#linearGradient3386"
-       id="radialGradient3392"
+       xlink:href="#linearGradient3290"
+       id="radialGradient3298"
        cx="1297.1274"
        cy="-584.08484"
        fx="1297.1274"
        fy="-584.08484"
        r="1305.2086"
-       gradientTransform="matrix(-1.7087389,1.9143126,-1.8883974,-1.6856066,2410.5952,-4051.7295)"
+       gradientTransform="matrix(-3.1339641,3.0981547,-2.8967375,-2.9302189,3670.3379,-6314.2823)"
        gradientUnits="userSpaceOnUse" />
   </defs>
   <sodipodi:namedview
@@ -1785,9 +1785,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.043750001"
+     inkscape:zoom="0.12374369"
      inkscape:cx="351.38071"
-     inkscape:cy="1784.2757"
+     inkscape:cy="1673.3542"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -1805,7 +1805,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -1815,7 +1815,7 @@
      id="layer1"
      transform="translate(0,2247.6378)">
     <rect
-       style="fill:url(#radialGradient3392);fill-opacity:1;fill-rule:nonzero;stroke:none"
+       style="fill:url(#radialGradient3298);fill-opacity:1;fill-rule:nonzero;stroke:none"
        id="rect2996"
        width="2610.4172"
        height="3353.7063"
@@ -1857,7 +1857,7 @@
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#000080;font-family:Open Sans;-inkscape-font-specification:Open Sans Bold">programación en MATLAB</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:100.00382233px;font-style:oblique;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#800080;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:Times New Roman"
+       style="font-size:100.00382232999999000px;font-style:oblique;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#f2f2f2;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:Times New Roman"
        x="1381.6522"
        y="521.68695"
        id="text3024"
@@ -1867,7 +1867,7 @@
          id="tspan3026"
          x="1381.6522"
          y="521.68695"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#800080;font-family:Droid Sans;-inkscape-font-specification:Droid Sans Bold">Pedro Jorge De Los Santos</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#f2f2f2;font-family:Droid Sans;-inkscape-font-specification:Droid Sans Bold">Pedro Jorge De Los Santos</tspan></text>
     <g
        transform="matrix(0.58403268,0,0,0.58403268,87.136087,342.73947)"
        id="layer1-9"
