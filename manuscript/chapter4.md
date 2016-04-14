@@ -1,4 +1,4 @@
-# Gráficas
+﻿# Gráficas
 
 ## Gráfica de una función a trozos
 

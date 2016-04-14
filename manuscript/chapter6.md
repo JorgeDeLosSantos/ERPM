@@ -1,4 +1,4 @@
-# Interfaces gráficas de usuario
+﻿# Interfaces gráficas de usuario
 
 Comunmente se denomina interfaz gráfica de usuario (GUI) a un conjunto
 de objetos gráficos mostrados en una ventana, que el usuario de un

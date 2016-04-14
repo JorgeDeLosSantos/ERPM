@@ -1,4 +1,4 @@
-# Cadenas de caracteres
+﻿# Cadenas de caracteres
 
 ## Invertir una cadena de texto
 

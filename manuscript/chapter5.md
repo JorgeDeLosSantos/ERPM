@@ -1,4 +1,4 @@
-# Matemáticas
+﻿# Matemáticas
 
 ## Ecuación de la recta que pasa por dos puntos
 
