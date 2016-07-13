@@ -35,8 +35,7 @@ se muestra enseguida, los resultados, desde luego, son iguales.
 
 ## Lista de números pares
 
-*Desarrolle un programa que proporcione los primeros números pares que
-se indiquen:*
+*Desarrolle un programa que proporcione los primeros números pares que se indiquen:*
 
 Para desarrollar la solución a este problema se hará uso del operador
 *dos puntos*, el cual permite crear una lista o vector de
@@ -64,9 +63,8 @@ disp(pares);
 
 *Escriba una función que le permita determinar si un número entero
 pasado como argumento es primo, en caso de serlo devolverá un valor
-lógico true y un valor false en caso
-contrario. (La función `isprime` de MATLAB realiza la misma
-operación).*
+lógico true y un valor false en caso contrario. (La función `isprime` 
+de MATLAB realiza la misma operación).*
 
 Primero, sin tantos formalismos, un número primo es aquel cuyos únicos
 divisores son el uno y él mismo. Así, un programa básico puede
@@ -86,7 +84,7 @@ end
 end
 ```
 
-En resúmen: sea define un vector {$$}L{/$$} de {$$}n{/$$} elementos que contiene todos
+En resúmen: se define un vector {$$}L{/$$} de {$$}n{/$$} elementos que contiene todos
 los números en el intervalo {$$}[1,n]{/$$}, enseguida se aplica la función
 rem a todos los elementos del vector {$$}L{/$$} y a esto se aplica
 la condición de ser igual a cero, resultando un vector de tipo lógico,
