@@ -1,22 +1,18 @@
-﻿Acerca de... {#acerca-de... .unnumbered}
-============
+﻿# Introducción
 
 Este pequeño *libro* se ha escrito con la finalidad de aportar una
 herramienta auxiliar a la comunidad hispanohablante de MATLAB.
 Orientado, sobre todo, a quienes dan los primeros pasos en la
-programación con este entorno de desarrollo.\
+programación con este entorno de desarrollo.
+
 Los problemas se han clasificado en diversas temáticas, para facilitar
 el estudio de los mismos. Todos los códigos de este libro están
-disponibles en el siguiente repositorio de GitHub: [
-**ERPM**](https://github.com/JorgeDeLosSantos).\
+disponibles en el siguiente repositorio de GitHub: [**ERPM**](https://github.com/JorgeDeLosSantos).
+
 El autor agradece cualquier tipo de comentario, observación u opinión, y
 puede remitirla a la dirección de correo electrónico que se adjunta
 posteriormente, o bien, contactándonos a través de las diversas
-plataformas cuyos enlaces se incluyen en la parte inferior.\
-\
-
-
-Modificando este archivo para "fetchearlo"
+plataformas cuyos enlaces se incluyen en la parte inferior.
 
 `Pedro Jorge De Los Santos`\
 `delossantosmfq@gmail.com`\
@@ -26,11 +22,3 @@ Modificando este archivo para "fetchearlo"
 [![image](src/linkedin_logo.png)](https://www.linkedin.com/in/pjdlsl)
 [![image](src/google_logo.png)](https://plus.google.com/u/0/+pjdelossantos)
 
-
-## Otras modificaciones para hacer "push" desde el "padre"
-
-
-## Otra ID-PUSHPARENT
-
-
-Otra modificación
