@@ -14,11 +14,17 @@ puede remitirla a la dirección de correo electrónico que se adjunta
 posteriormente, o bien, contactándonos a través de las diversas
 plataformas cuyos enlaces se incluyen en la parte inferior.
 
-`Pedro Jorge De Los Santos`\
-`delossantosmfq@gmail.com`\
-[![image](src/blogger_logo.png)](https://labdls.blogspot.mx)
+`Pedro Jorge De Los Santos`
+`delossantosmfq@gmail.com`
+
+[GitHub](https://github.com/JorgeDeLosSantos)
+[Google+](https://plus.google.com/u/0/+pjdelossantos)
+[Twitter](https://twitter.com/pjdlsl)
+
+
+<!-- [![image](src/blogger_logo.png)](https://labdls.blogspot.mx)
 [![image](src/youtube_logo.png)](https://www.youtube.com/user/lab2dls)
 [![image](src/github_logo.png)](https://github.com/JorgeDeLosSantos)
 [![image](src/linkedin_logo.png)](https://www.linkedin.com/in/pjdlsl)
-[![image](src/google_logo.png)](https://plus.google.com/u/0/+pjdelossantos)
+[![image](src/google_logo.png)](https://plus.google.com/u/0/+pjdelossantos) -->
 
