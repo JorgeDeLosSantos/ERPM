@@ -7,7 +7,7 @@ programación con este entorno de desarrollo.
 
 Los problemas se han clasificado en diversas temáticas, para facilitar
 el estudio de los mismos. Todos los códigos de este libro están
-disponibles en el siguiente repositorio de GitHub: [**ERPM**](https://github.com/JorgeDeLosSantos).
+disponibles en el siguiente repositorio de GitHub: [**ERPM**](https://github.com/JorgeDeLosSantos/ERPM).
 
 El autor agradece cualquier tipo de comentario, observación u opinión, y
 puede remitirla a la dirección de correo electrónico que se adjunta
@@ -15,11 +15,14 @@ posteriormente, o bien, contactándonos a través de las diversas
 plataformas cuyos enlaces se incluyen en la parte inferior.
 
 `Pedro Jorge De Los Santos`
+
 `delossantosmfq@gmail.com`
 
+
+[Twitter](https://twitter.com/pjdlsl)
 [GitHub](https://github.com/JorgeDeLosSantos)
 [Google+](https://plus.google.com/u/0/+pjdelossantos)
-[Twitter](https://twitter.com/pjdlsl)
+
 
 
 <!-- [![image](src/blogger_logo.png)](https://labdls.blogspot.mx)

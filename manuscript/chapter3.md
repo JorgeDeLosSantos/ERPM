@@ -8,10 +8,8 @@ ejemplo, si usted introduce MATLAB deberá devolverle BALTAM.*
 En esencia lo que se debe hacer es *invertir* los indices del vector
 tipo char en el cual se guarda la cadena de texto.
 
-```matlab
-cad=input('Introduzca una palabra: ','s');
-disp(cad((end:-1:1)));
-```
+    cad=input('Introduzca una palabra: ','s');
+    disp(cad((end:-1:1)));
 
 ## Contar palabras
 
@@ -21,17 +19,15 @@ asumirá que el texto pasado como dato de entrada tiene una estructura
 coherente y libre de cualquier secuencia extraña de signos de puntuación
 u otro tipo de caracteres diferentes a los alfanuméricos.*
 
-```matlab
-txt = input('Inserte un texto: ','s');
-resto = txt;
-k = 0; % Inicializa contador
-while true
-   [palabra, resto] = strtok(resto, ' ');
-   if isempty(palabra),  break;  end
-   k = k + 1;
-end
-fprintf('No. de palabras encontradas: %d\n\n',k);
-```
+    txt = input('Inserte un texto: ','s');
+    resto = txt;
+    k = 0; % Inicializa contador
+    while true
+       [palabra, resto] = strtok(resto, ' ');
+       if isempty(palabra),  break;  end
+       k = k + 1;
+    end
+    fprintf('No. de palabras encontradas: %d\n\n',k);
 
 ## Contar vocales en una cadena de texto
 
@@ -39,19 +35,18 @@ fprintf('No. de palabras encontradas: %d\n\n',k);
 y que muestre como salida el número de vocales que contiene dicha
 frase.*
 
-```matlab
-cad=input('Introduzca una cadena de texto: ','s');
-k=0;
-for i=1:length(cad)
-    switch cad(i)
-        case {'A','a','E','e','I','i','O','o','U','u'}
-            k=k+1;
-        otherwise
-            % ...
+    cad=input('Introduzca una cadena de texto: ','s');
+    k=0;
+    for i=1:length(cad)
+        switch cad(i)
+            case {'A','a','E','e','I','i','O','o','U','u'}
+                k=k+1;
+            otherwise
+                % ...
+        end
     end
-end
-fprintf('Numero de vocales: %g\n\n',k);
-```
+    fprintf('Numero de vocales: %g\n\n',k);
+
 
 ## Ordenar palabras
 

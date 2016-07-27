@@ -8,27 +8,25 @@ Además, la clase debe contener un método crecer que recibirá como
 argumento un entero positivo que indicará los años que *crecerá* el
 objeto, desde luego modificando el atributo edad.*
 
-```matlab
-classdef Persona < handle
-    
-    properties
-        nombre;
-        edad;
-    end
-    
-    methods
-        function obj = Persona(nombre,edad)
-            obj.nombre = nombre;
-            obj.edad = edad;
+    classdef Persona < handle
+        
+        properties
+            nombre;
+            edad;
         end
         
-        function crecer(obj,anios)
-            obj.edad = obj.edad + anios;
+        methods
+            function obj = Persona(nombre,edad)
+                obj.nombre = nombre;
+                obj.edad = edad;
+            end
+            
+            function crecer(obj,anios)
+                obj.edad = obj.edad + anios;
+            end
         end
+        
     end
-    
-end
-```
 
 ## Clase Math (Métodos estáticos)
 
@@ -36,44 +34,42 @@ end
 (constante e) y PI (constante {$$}\pi{/$$}), y los métodos estáticos sumar,
 multiplicar, redondear, mayor y menor.*
 
-```matlab
-classdef Math
-    % Clase Math
-    
-    properties (Constant = true)
-        % Atributos constantes
-        PI = pi;
-        E = exp(1);
-    end
-    
-    methods (Static)
-        % Métodos estáticos
-        function r = sumar(a,b)
-            r = a + b;
+    classdef Math
+        % Clase Math
+        
+        properties (Constant = true)
+            % Atributos constantes
+            PI = pi;
+            E = exp(1);
         end
         
-        function r = multiplicar(a,b)
-            r = a * b;
-        end
-        
-        function r = redondear(n)
-            r = round(n);
-        end
-        
-        function r = mayor(a,b)
-            r = a;
-            if b > a
-                r = b;
+        methods (Static)
+            % Métodos estáticos
+            function r = sumar(a,b)
+                r = a + b;
+            end
+            
+            function r = multiplicar(a,b)
+                r = a * b;
+            end
+            
+            function r = redondear(n)
+                r = round(n);
+            end
+            
+            function r = mayor(a,b)
+                r = a;
+                if b > a
+                    r = b;
+                end
+            end
+            
+            function r = menor(a,b)
+                r = a;
+                if b < a
+                    r = b;
+                end
             end
         end
         
-        function r = menor(a,b)
-            r = a;
-            if b < a
-                r = b;
-            end
-        end
-    end
-    
-end  
-```
+    end  
