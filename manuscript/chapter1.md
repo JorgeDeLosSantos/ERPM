@@ -104,6 +104,7 @@ geometría básica y recordar que el área y perímetro (circunferencia) de
 un círculo vienen dados por:
 
 {$$}A=\pi r^2{/$$}
+
 {$$}P=2 \pi r{/$$}
 
 Con lo anterior se plantea una solución:
@@ -125,8 +126,10 @@ Sea {$$}\theta_r{/$$} un ángulo dado en radianes y {$$}\theta_g{/$$} en grados
 sexagesimales, las *formulas* de conversión resultan en:
 
 {$$}\theta_r = \theta_g \left(\frac{\pi}{180}\right){/$$}
+
 {$$}\theta_g = \theta_r \left(\frac{180}{\pi}\right){/$$}
 
+Podemos implementar una solución utilizando una estructura `switch`:
 
     opcion=input(['Seleccione una opción: \n 1. Grados a radianes'...
     '\n 2. Radianes a grados \n']);
@@ -142,6 +145,9 @@ sexagesimales, las *formulas* de conversión resultan en:
             disp('Opcion incorrecta');
     end
 
+Se tiene como punto de entrada el ángulo `theta`, mismo que deberá estar en radianes 
+o grados sexagesimales, dependiendo de la opción escogida al principio.
+
 
 <!-- =============================================================== -->
 ## Promedio de una lista de valores
@@ -150,11 +156,32 @@ sexagesimales, las *formulas* de conversión resultan en:
 introducir y que posteriormente sean ingresados manualmente, con los
 datos anteriores calcular el promedio de los mismos.*
 
+Una primera aproximación a la solución sería la siguiente:
+
     n=input('Cantidad de datos a introducir: ');
     for i=1:n
         D(i)=input(['Dato ',num2str(i),': ']);
     end
     fprintf('El promedio de los datos introducidos es %g\n',mean(D));
+
+¿Funciona?, sí, bastante bien, pero hay algunas cuestiones que podemos 
+hacerlas de mejor manera. 
+
+La matriz `D` podríamos pre-inicializarla antes de entrar en el bucle for, 
+a *priori* conocemos el número de elementos que tendrá `D`, entonces se puede 
+crear un vector de ceros de tales dimensiones. Además, el promedio calculado 
+deberíamos guardarlo en una variable para tener una mejor legibilidad del código 
+(*puede parecer una tontería ahora, pero cuando se tengan códigos más serios 
+es una cuestión vital*), así pues, reimplementando el código:
+
+    clear all;clc;
+    n=input('Cantidad de datos a introducir: ');
+    D = zeros(1,n);
+    for i=1:n
+        D(i)=input(['Dato ',num2str(i),': ']);
+    end
+    promedio = mean(D);
+    fprintf('El promedio de los datos introducidos es %g\n', promedio);
 
 
 <!-- =============================================================== -->
@@ -218,6 +245,8 @@ general**.
 
 {$$}x_{1,2}=\frac{-b\pm\sqrt{b^2-4ac}}{2a}{/$$}
 
+Luego, podemos implementar una función que devuelva dos valores de salida (`x1` y `x2`), 
+calculados a partir de la formula mencionada:
 
     function [x1,x2]=ecuadratica(a,b,c)
     % Resuelve una ecuacion de segundo orden, siendo
@@ -228,11 +257,18 @@ general**.
     end
 
 
+
 <!-- =============================================================== -->
 ## Tiempo de vida
 
 *Desarrolle un script que le permita calcular el número de años, meses,
 días y horas que ha vivido un individuo.*
+
+Como dato de entrada se tiene la fecha de nacimiento del individuo: año, mes 
+y día, los cuales se deben de contrastar con la fecha actual (recuerde que la 
+fecha o tiempo actual puede obtenerlo con la función/comando `now`).
+
+Vea el siguiente script implementado:
 
     D=input('Día de nacimiento: ');
     M=input('Mes de nacimiento: ');
@@ -244,6 +280,23 @@ días y horas que ha vivido un individuo.*
     fprintf('Meses = %g \n',(actual-nac)/30);
     fprintf('Dias = %g \n',(actual-nac));
     fprintf('Horas = %g \n',(actual-nac)*24);
+
+La función `now` devuelve un valor numérico real que corresponde al tiempo 
+transcurrido (medido en días) desde el 00-01-0000 (01 de Enero del año 0).
+Luego, podemos construir de igual manera un valor numérico a partir del día, 
+mes y año de una determinada fecha, utilizando la función 
+[`datenum`](http://www.mathworks.com/help/matlab/ref/datenum.html) que puede 
+recibir como argumento un string de la forma `'DD-MM-AAAA'` o bien tres argumentos 
+referentes al año, mes y día, en ese orden. Una vez se tienen los valores 
+correspondientes basta con realizar la diferencia aritmética y escalar acorde al valor 
+o unidad de tiempo de salida. Note que se han hecho ciertas simplificaciones que 
+podrían introducir cierto error, como considerar que todos los meses tienen 30 días o  
+que todos los años 365, pero aún así el error será poco significativo.
+
+
+I> Si tiene una versión posterior a R2014b puede utilizar funciones como
+I> [`between`](http://www.mathworks.com/help/matlab/ref/between.html) 
+I> que le permite realizar aritmética de fechas/horas de manera más sencilla.
 
 
 <!-- =============================================================== -->
@@ -262,7 +315,7 @@ intervalo que se especifique. Dentro de un bucle while se hacen las
 comprobaciones de equivalencia del número aleatorio con el número
 propuesto por el jugador. Además se utiliza un contador que se
 incrementa en la unidad cada vez que se ejecuta un ciclo. El ciclo se
-*rompe* cuando el jugador adivina el número mediante la instrucción
+*rompe*, cuando el jugador adivina el número, mediante la instrucción
 `break`.
 
 

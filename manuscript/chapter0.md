@@ -19,8 +19,11 @@ plataformas cuyos enlaces se incluyen en la parte inferior.
 `delossantosmfq@gmail.com`
 
 
+
 [Twitter](https://twitter.com/pjdlsl)
+
 [GitHub](https://github.com/JorgeDeLosSantos)
+
 [Google+](https://plus.google.com/u/0/+pjdelossantos)
 
 
