@@ -28,6 +28,15 @@ plataformas cuyos enlaces se incluyen en la parte inferior.
 
 
 
+<!--  
+Imagen de portada obtenida de:
+
+https://pixabay.com/es/nano-tecnolog%C3%ADa-construcci%C3%B3n-1480553/
+
+Autor: PeteLinforth
+-->
+
+
 <!-- [![image](src/blogger_logo.png)](https://labdls.blogspot.mx)
 [![image](src/youtube_logo.png)](https://www.youtube.com/user/lab2dls)
 [![image](src/github_logo.png)](https://github.com/JorgeDeLosSantos)

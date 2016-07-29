@@ -346,6 +346,10 @@ resultados para n=3 y n=7.*
 
 ![](images/rombo.png)
 
+Seguro existen múltiples formas de proceder para esto, en este caso vamos 
+a basarnos en algo simple, que consiste en utilizar un ciclo `for` para 
+iterar sobre el número de filas del rombo.
+
 
     n=input('Numero de filas del rombo: ');
     R='';
