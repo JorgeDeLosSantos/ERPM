@@ -348,8 +348,8 @@ resultados para n=3 y n=7.*
 
 Seguro existen múltiples formas de proceder para esto, en este caso vamos 
 a basarnos en algo simple, que consiste en utilizar un ciclo `for` para 
-iterar sobre el número de filas del rombo.
-
+iterar sobre el número de filas del rombo. Revise el código que a continuación 
+se plantea:
 
     n=input('Numero de filas del rombo: ');
     R='';
@@ -361,6 +361,12 @@ iterar sobre el número de filas del rombo.
         end
     end
     disp(R);
+
+La idea principal consiste en *rellenar* una matriz de caracteres de **nxn**, 
+con asteriscos las posiciones que corresponden al exterior del rombo y con 
+un caracter vacío o nulo el resto de estas. Entonces, primero se define la 
+matriz `R` como un string vacío y enseguida creamos un ciclo `for` para iterar 
+sobre las filas del rombo:
 
 
 <!-- =============================================================== -->
@@ -381,8 +387,7 @@ unidad).*
         k=k+1;
     end
     fprintf('\n %d! = %d\n\n',N,fact);
-
-
+ 
 <!-- =============================================================== -->
 ## Imprimir triángulo
 
