@@ -1,15 +1,14 @@
-﻿# Programación básica e intermedia
-
+﻿# Programación básica
 
 <!-- =============================================================== -->
-## Número par / impar 
+## Ejercicio 1.1 - Número par / impar 
 
 *Desarrolle un programa que determine si un número es par o impar.*
 
 Este ejercicio es uno de los más comunes en los cursos básicos de
 programación. Para resolverlo hay que tener en cuenta algunas nociones
 básicas de matemáticas: es sabido que cualquier número par es divisible
-por 2, lo cual nos lleva al supuesto de que si un número es par
+por 2, lo cual nos lleva al supuesto de que si un número es par, 
 necesariamente el resto de la división entre 2 debe ser igual a cero. La
 función rem de MATLAB devuelve 0 si el residuo de la división entera es
 nulo, y devuelve 1 si es una cantidad igual o mayor a la unidad.
@@ -23,7 +22,7 @@ comprobación y que muestre en pantalla si el número es par o impar.
         disp('Numero impar');
     end
 
-El programa anterior utiliza la sentencia compuesta if-else para llevar
+El programa anterior utiliza la sentencia compuesta `if-else` para llevar
 a cabo dicha tarea. Es posible también usar la sentencia switch tal como
 se muestra enseguida, los resultados, desde luego, son iguales.
 
@@ -35,9 +34,20 @@ se muestra enseguida, los resultados, desde luego, son iguales.
             disp('Numero impar');
     end
 
+Otra manera de implementar una solución es basándonos en el hecho de que 
+-1 elevado a una potencia par es 1, y elevado a una potencia impar será -1. 
+Se puede establecer entonces el siguiente código:
+
+    num=input('Número: ');
+    if (-1)^num == 1
+        disp('Número par');
+    else
+        disp('Número impar');
+    end
+
 
 <!-- =============================================================== -->
-## Lista de números pares
+## Ejercicio 1.2 - Lista de números pares
 
 *Desarrolle un programa que proporcione los primeros números pares que se indiquen:*
 
@@ -55,7 +65,7 @@ pares, se esperaría que el último valor sea 6, que es equivalente a
 tener 2x3, así, de forma generalizada, el valor final será 2n, donde n
 es la cantidad de números pares.
 
-    n=input('¿Cuantos numeros pares necesita? ');
+    n=input('¿Cuántos números pares necesita? ');
     pares=2:2:2*n;
     disp(pares);
 
@@ -89,9 +99,8 @@ rem a todos los elementos del vector {$$}L{/$$} y a esto se aplica
 la condición de ser igual a cero, resultando un vector de tipo lógico,
 donde los unos corresponden a aquellos números donde el residuo de la
 división entera es cero y por tanto divisores de {$$}n{/$$}; finalmente,
-mediante la función `nnz` se *cuentan* los
-elementos que no son ceros, si estos son igual a dos, entonces se tiene
-un número primo.
+mediante la función `nnz` se *cuentan* los elementos que no son ceros, si estos son igual a dos, 
+entonces se tiene un número primo.
 
 <!-- =============================================================== -->
 ## Área y perímetro de un círculo
@@ -123,7 +132,7 @@ programa que le permita hacer la conversión de grados sexagesimales a
 radianes y viceversa.*
 
 Sea {$$}\theta_r{/$$} un ángulo dado en radianes y {$$}\theta_g{/$$} en grados
-sexagesimales, las *formulas* de conversión resultan en:
+sexagesimales, las *fórmulas* de conversión resultan en:
 
 {$$}\theta_r = \theta_g \left(\frac{\pi}{180}\right){/$$}
 
@@ -446,7 +455,7 @@ y tangente).*
 desarrollará e imprimirá en pantalla su tabla de multiplicación del 1 al
 10, por ejemplo:*
 
-[](images/tablamult.png)
+![](images/tablamult.png)
 
 
     N = input('Tabla del: ');

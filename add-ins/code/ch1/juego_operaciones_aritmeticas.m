@@ -16,4 +16,4 @@ end
 t= toc;
 disp(puntos);
 puntos = puntos + (15 - t);
-
+disp(puntos);

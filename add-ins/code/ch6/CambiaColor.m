@@ -6,7 +6,7 @@ f = figure('MenuBar','none',...
 while ishandle(f)
     set(f,'Color',rand(1,3));
     pause(0.5);
-    drawnow;
+%     drawnow;
 end
 
 end

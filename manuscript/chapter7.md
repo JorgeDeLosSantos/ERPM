@@ -1,4 +1,4 @@
-﻿# POO
+﻿# Programación orientada a objetos
 
 ## La clase Persona
 

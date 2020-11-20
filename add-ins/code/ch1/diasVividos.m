@@ -9,3 +9,6 @@ fprintf('Años = %g \n',(actual-nac)/365);
 fprintf('Meses = %g \n',(actual-nac)/30);
 fprintf('Días = %g \n',(actual-nac));
 fprintf('Horas = %g \n',(actual-nac)*24);
+t1 = datetime(A,M,D);
+datetime(now); - t1
+
